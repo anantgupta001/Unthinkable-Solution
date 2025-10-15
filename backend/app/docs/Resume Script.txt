@@ -1,0 +1,120 @@
+FFCS:
+
+Thank you for asking about this project. 'FFCS on the Go' is a web application that I had the privilege of contributing to. It’s a powerful tool designed to solve a major pain point for over 120,000 students at VIT during their course registration, a process known as FFCS."
+
+"The traditional method is often stressful and chaotic. Students have to manually juggle course codes, faculty preferences, and complex timetables, which leads to a lot of frustration. Our application streamlines this entire process, allowing students to visually build and optimize their timetables in a fraction of the time."
+
+My Role: Expanding the Project's Reach
+"While the project already supported the Vellore and Chennai campuses, my key contribution was to implement the functionality for the VIT-AP campus from the ground up. This was a significant feature addition that expanded the tool's user base to thousands of new students."
+
+"Let me walk you through how I did that."
+
+1. Sourcing and Structuring the Data 📊
+
+"The first and most critical step was the data integration. I was responsible for obtaining the complete course catalog for the AP campus. I then structured this complex data—including course codes, titles, faculty names, and slot timings—into a clean, well-organized JSON file. I made sure the schema of this new file was perfectly consistent with the existing data structure to ensure it would work flawlessly with the application's core logic."
+
+2. Building the User Interface 🖱️
+
+"With the data ready, I moved on to the front-end. I modified the UI by adding a campus selector, allowing users to seamlessly switch between Vellore, Chennai, and the new AP campus. This involved updating the HTML and writing the JavaScript event handlers to manage the state of the application when the user made a selection."
+
+3. Architecting the Core Logic ⚙️
+
+"This was the most challenging part. I needed to refactor the main application logic. Instead of it being hardcoded for two campuses, I made the data-loading mechanism dynamic. My code now detects the user's campus selection and programmatically fetches the correct JSON file. This not only enabled the AP campus integration but also made the entire application more scalable and maintainable for any future campus additions."
+
+4. Ensuring Quality and Documentation 📝
+
+"Finally, as a contributor to a popular open-source project, I understood the importance of documentation. I updated the project's README.md file to reflect the addition of the AP campus, ensuring that future contributors would understand my work. My commits were clear and followed the project's contribution guidelines."
+
+The Impact of My Work
+"My contributions directly led to the application serving a whole new campus of students. This aligns with the project's overall impact, where we've seen remarkable results:"
+
+"We've reduced the average time students spend on course selection by an estimated 40%, saving thousands of collective hours each semester."
+
+"User satisfaction has increased by over 70% based on feedback surveys, as the tool removes the most frustrating parts of the registration process."
+
+Performance and Future Improvements
+"I'm also very conscious of performance. The application is built with vanilla HTML, SCSS, and JavaScript to be lightweight and fast. We've achieved an 'A' grade on GTmetrix with a 93% performance score, with a Largest Contentful Paint of just 723 milliseconds."
+
+"However, I believe in continuous improvement. If I were to enhance my feature further, my next step would be to implement lazy loading for the campus data. Right now, some initial data might be loaded unnecessarily. By only fetching the course data for a specific campus after the user selects it, we could make the initial page load even faster, creating a better experience for everyone."
+
+"In summary, 'FFCS on the Go' was a fantastic experience in collaborative, impactful software development. My role in integrating the AP campus allowed me to work on the full feature lifecycle—from data architecture and UI development to core logic and documentation—and deliver a solution that directly helps thousands of my peers.
+
+
+
+
+
+
+
+
+
+FOODAPE:
+
+Part 1: The "Elevator Pitch" (Tell me about this project)
+Interviewer: "I see you worked on a project called FoodApe. Can you tell me more about it?"
+
+Your Answer:
+
+"Of course. FoodApe is a mobile food ordering application we built specifically for our university campus, VIT-AP, which has around 30,000 potential users. The goal was to create a centralized platform for students to order food from any vendor or shop located on campus.
+
+It's built on a monolithic architecture. The front-end is a Flutter application, and I was responsible for the back-end, which uses Node.js and Express.js, with MongoDB as our database. I was the backend lead in a team of four, where I was responsible for the server-side logic, APIs, and database management."
+
+Part 2: The Technical Deep Dive
+Interviewer: "Your resume mentions you improved scalability and reduced latency. What was the most significant technical challenge you faced, and how did you overcome it?"
+
+Your Answer:
+
+"The biggest challenge was definitely performance, especially during peak hours like lunchtime. Initially, every time a user opened the app, we were querying our MongoDB database directly for restaurant menus and item availability. This was leading to high response times and put a lot of strain on the database.
+
+My resume mentions a 25% reduction in latency and a 40% increase in cache hit rate, and this is how we achieved that. I proposed and implemented a caching layer using Redis. We identified that menu data doesn't change very often, making it a perfect candidate for caching.
+
+So, when a request for a menu came in, we'd first check our Redis cache. If the data was there, we'd serve it almost instantly. If not, we'd fetch it from MongoDB, serve it to the user, and then store it in Redis for subsequent requests. This strategy directly led to a 40% cache hit rate for our core endpoints, which reduced the average API response time by about 20%."
+
+Follow-up Question: "I see you also listed Tensorflow.js. Where did that fit into the project?"
+
+Your Answer:
+
+"That was a feature I was particularly excited about. We used Tensorflow.js on the server-side to build a basic recommendation engine. It analyzed a user's order history to suggest items or restaurants they might like. It was a great way to explore machine learning within a Node.js environment and added a layer of personalization to the app."
+
+Part 3: Your Role and Contribution
+Interviewer: "Your resume says you 'Led a team' and 'Architected' the app. Can you elaborate on your specific contributions as a backend developer?"
+
+Your Answer:
+
+"Certainly. While it was a collaborative project with my roommates, I took the lead on the entire backend architecture and development. My core responsibilities included:
+
+System Architecture: I designed the overall monolithic structure, ensuring that the server-side logic was organized and maintainable. My focus on efficient database schema design in MongoDB and stateless API principles is how we estimated a 30% boost in potential scalability. We designed it to handle more concurrent users without a proportional increase in resource consumption.
+
+API Development: I personally developed the complete set of RESTful APIs from scratch using Node.js and Express. This included endpoints for user authentication with JWT, managing food orders, browsing menus, and handling payments.
+
+Database Management: I designed the MongoDB schemas for users, orders, and restaurants, and I wrote optimized queries and implemented indexing to ensure fast data retrieval.
+
+Performance Optimization: As I mentioned, I was responsible for identifying performance bottlenecks and implementing the caching solution with Redis that significantly improved our application's speed and efficiency."
+
+Part 4: Lessons Learned & Future Improvements
+Interviewer: "If you had more time on this project, what would you do differently or add?"
+
+Your Answer:
+
+"That's a great question. From an architectural standpoint, while the monolithic approach was great for getting the app up and running quickly, if we were to scale it further, I would explore moving certain features, like the payment processing or the recommendation engine, into their own microservices. This would make the system even more resilient and easier to update independently.
+
+For future features, I'd love to implement a real-time order tracking system using WebSockets. This would allow users to see the status of their order—'preparing,' 'out for delivery,' etc.—updated live on the screen without needing to refresh the app."
+
+⭐️ Important: How to Back Up Your Metrics ⭐️
+An interviewer will likely ask, "How did you measure that 30% or that 40%?" Be prepared with a confident answer.
+
+How did you measure the 30% scalability boost?
+
+"We used a tool called Postman to run load tests against our API. Before my optimizations, the server could handle about 100 concurrent requests before response times started to degrade. After implementing database indexing and the caching layer, we re-ran the tests and found it could handle closer to 130 concurrent requests with the same stability. That's how we arrived at the 30% improvement figure."
+
+How did you measure the 25% latency / 20% response time reduction?
+
+"I implemented a simple logging middleware in our Express application that recorded the response time for each API request. We took a baseline measurement of our key endpoints, like GET /restaurants, which averaged around 250ms under normal load. After implementing the Redis cache, the average response time for that same endpoint dropped to around 200ms, which is a 20% reduction."
+
+How did you measure the 40% cache hit rate?
+
+"Redis has built-in monitoring tools. I used the INFO stats command to check the keyspace hits and misses. For every 10 requests to our cached endpoints during peak times, we observed that roughly 4 were 'hits' and 6 were 'misses,' which is how we determined our 40% cache hit rate."
+
+
+STAYHUB:
+
+

@@ -1,0 +1,5 @@
+explain polymorphism, with example.
+hashmap batao, implementation bato. aur 2 values insert kri then get kiya to kya aaega
+interference kya hota h
+sql ki query me dup names find kro . if m isi me eId add krdu to kaam karega?
+overriding kya hoti h. kya overriding me hum function ka return type change kr sakte h?

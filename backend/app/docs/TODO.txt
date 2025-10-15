@@ -1,0 +1,27 @@
+MAIN GOAL -> 
+1. TUF A2Z - 20-08-2025
+2. Theory Subject (Revision) - 15-08-2025
+3. Theory Subjects (Test) - 20-08-2025
+4. Interview Script - 20-08-2025  
+
+
+10-08-2025
+1. Binary Search - Solutions
+2. Tree - Solving 10Q
+3. OOPS - Revision
+
+
+11-08-2025
+1.
+2. 
+3.
+
+13-08-2025
+1. Operation system -> (paging, segmentation, page fault, scheduling also, linkers, loaders)
+2. Trees hard level
+3. 
+
+
+04-09-2025
+1. operating system, OOP'S 
+2. Revision Arrays, Strings

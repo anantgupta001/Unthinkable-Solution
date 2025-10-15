@@ -1,0 +1,10 @@
+Difference Between HTTP and HTTPS 
+HTTP                                                            	HTTPS
+HTTP stands for HyperText Transfer Protocol. In HTTP, the URL begins with “http://”. 	HTTPS stands for HyperText Transfer Protocol Secure. In HTTPS, the URL starts with “https://”.
+HTTP uses port number 80 for communication.	HTTPS uses port number 443 for communication.
+Hyper-text exchanged using HTTP goes as plain text i.e. anyone between the browser and server can read it relatively easily if one intercepts this exchange of data and due to which it is Insecure.	HTTPS is considered to be secure but at the cost of processing time because Web Server and Web Browser need to exchange encryption keys using Certificates before actual data can be transferred.
+HTTP Works at the Application Layer.	HTTPS works at Transport Layer.
+HTTP does not use encryption, which results in low security in comparison to HTTPS.	HTTPS uses Encryption which results in better security than HTTP.
+HTTP speed is faster than HTTPS.	HTTPS speed is slower than HTTP.
+HTTP does not use data hashtags to secure data.	HTTPS will have the data before sending it and returning it to its original state on the receiver side.
+HTTP is used to transfer text, video, and images via web pages.	HTTPS is used to transfer data securely via a network.
