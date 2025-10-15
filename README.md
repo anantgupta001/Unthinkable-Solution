@@ -2,6 +2,8 @@
 
 A RAG (Retrieval-Augmented Generation) based knowledge base search engine that allows users to search across multiple documents (text and PDF) and get AI-powered synthesized answers.
 
+DEMO VIDEO: https://drive.google.com/file/d/1JNRzu9e6-rjGMXAF0ElnFEj7B36BPQOL/view?usp=sharing
+
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
